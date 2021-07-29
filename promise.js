@@ -6,6 +6,7 @@ var promise = new Promise(function(resolve, reject) {
     } else{
         reject();
     }
+    
 });
 
 promise.
@@ -16,17 +17,17 @@ promise.
         console.log('some error has occured');
     });
 
-    // example 2
+// example 2
 
-    promise = new Promise(function(resolve, reject) {
-        setTimeout(() => resolve(), 1000);
-    });
+promise = new Promise(function(resolve, reject) {
+    setTimeout(() => resolve(), 1000);
+});
       
-      // resolve runs the first function in .then
-    promise.
-        then(function() {
-            console.log('done!!'); //shows done after 1 second
-        }).
-        catch (function() {
-            console.log('error');
-        }); 
+// resolve runs the first function in .then
+promise.
+    then(function() {
+        console.log('done!!'); //shows done after 1 second
+    }).
+    catch (function() {
+        console.log('error');
+    }); 

@@ -1,3 +1,5 @@
+// hoisting
+
 x = 10;
 y = 20;
 function sum() {

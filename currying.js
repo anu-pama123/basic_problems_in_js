@@ -1,4 +1,4 @@
-// normal method
+// normal method to find volume
 
 function volume1(length, width, height) {
     return length * width * height;
@@ -20,7 +20,7 @@ function volume(length) {
 let result1 = volume(10) (1) (20);
 console.log('Volume with currying = ' + result1);
 
-// example 2
+// example 2 -> muliplication using normal method and by currying
 
 let multiply = (a, b, c) => {
     return a * b * c;

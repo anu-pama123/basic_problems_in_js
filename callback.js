@@ -26,9 +26,10 @@ mul(5, 6, function display() {
 
 function download(url, callback) {
     setTimeout(() => {
-        console.log(`Downloading ${url}`);
+        // console.log(`Downloading ${url}`);
         callback(url);
     }, 3000);
+    console.log(`Downloading ${url}`);
 }
 
 function process(picture) {
