@@ -1,15 +1,15 @@
 // example 1
 
-var geeks = {
+var student = {
     name : "ABC",
     printFunc: function(){
        console.log(this.name);}
 }
          
-var printFunc2= geeks.printFunc.bind(geeks); // bind takes object geeks as parameter
+var printFunc2= student.printFunc.bind(student); // bind takes object student as parameter
 printFunc2();
 
-// example 2 binding first name and second name
+// example 2 -> binding first name and second name
 
 const personDetails = {
     fullName: function() {
@@ -44,7 +44,7 @@ const line2 = {
     line2 : "All"
 }
 
-let answer = sentence.fullLine.bind(line2, ["Kavya", "Megha"]);
+let answer = sentence.fullLine.bind(line2, "Kavya", "Megha");
 console.log(answer());
 
 

@@ -1,6 +1,8 @@
+// eample 1
+
 var promise = new Promise(function(resolve, reject) {
     const x = 'Anupama';
-    const y = 'Anupama2';
+    const y = 'Anupama';
     if(x == y) {
         resolve();
     } else{

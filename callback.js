@@ -1,3 +1,5 @@
+// example 1
+
 function add(number1, number2, callback) {
     let  sum = number1 + number2;
     console.log("sum = " + sum);
@@ -26,10 +28,9 @@ mul(5, 6, function display() {
 
 function download(url, callback) {
     setTimeout(() => {
-        // console.log(`Downloading ${url}`);
-        callback(url);
+        console.log(`Downloading ${url}`);
     }, 3000);
-    console.log(`Downloading ${url}`);
+    callback(url);
 }
 
 function process(picture) {

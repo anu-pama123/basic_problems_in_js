@@ -9,6 +9,19 @@ console.log("2");
 
 // example 2
 
+async function display() {
+  let promise = new Promise(function(resolve, reject) {
+    resolve("Hai !!");
+  });
+  let answer = await promise;
+  console.log(answer);
+}
+
+display();
+console.log('Hello');
+
+// example 3
+
 async function f() {
 
   let promise = new Promise((resolve, reject) => {
@@ -22,15 +35,4 @@ async function f() {
 
 f();
 
-// example 3
 
-async function display() {
-  let promise = new Promise(function(resolve, reject) {
-    resolve("Hai !!");
-  });
-  let answer = await promise;
-  console.log(answer);
-}
-
-display();
-console.log('Hello');

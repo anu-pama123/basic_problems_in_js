@@ -2,7 +2,7 @@
 
 const personDetails = {
     fullName: function(city, country) {
-      return this.firstName + " " + this.lastName + "," + city + "," + country;
+        return this.firstName + " " + this.lastName + "," + city + "," + country;
     }
 }
   

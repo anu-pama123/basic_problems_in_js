@@ -1,17 +1,17 @@
+// normal method
+
 var userName = "Bill";
 
 function display(name)
 {
-    console.log("MyScript1.js: " + name);
+    console.log("User name is: " + name);
 }
-
-display(userName);
 
 var userName = "Steve";
 
 function display(name)
 {
-    console.log("MyScript2.js: " + name);
+    console.log("User name is: " + name);
 }
 
 display(userName);
@@ -23,8 +23,21 @@ display(userName);
     
     function display(name)
     {
-        console.log("MyScript2.js: " + name);
+        console.log("User name is: " + name);
     }
 
     display(userName);
-  })();
+})();
+
+
+// example 2
+
+function myFunc()
+{
+    console.log("Welcome to");
+    (function() { console.log("India!"); })();
+    console.log("Hi There!");
+}
+  
+myFunc();
+
